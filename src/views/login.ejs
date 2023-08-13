@@ -5,21 +5,50 @@
     <div class="col-lg-2"></div>
 
     <div class="col-lg-8 my-3">
-      <h1 class="text-center">Login</h1>
+      <h1 class="text-center">Criar conta ou login</h1>
       <p class="text-center lead">Faça login ou crie sua conta abaixo:</p>
 
       <div class="row">
         <div class="col-lg">
-            <h4>Faça seu cadastro</h4>
-        </div>
+          <h4>Faça seu cadastro</h4>
+          <p>Se você ainda não é cadastrado, preencha o formulario abaixo</p>
 
+          <form action="/login/regiter" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+            <div class="form-group my-3">
+              <label>Seu email</label>
+              <input type="email" class="form-control" name="email" />
+            </div>
+
+            <div class="form-group my-3">
+              <label>Sua senha</label>
+              <input type="password" class="form-control" name="password" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Criar conta</button>
+          </form>
+        </div>
 
         <div class="col-lg">
-            <h4>Faça login</h4>
+          <h4>Faça seu login</h4>
+          <p>Se você já é cadastrado, faça login abaixo</p>
+
+          <form action="/login/login" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+            <div class="form-group my-3">
+              <label>Seu email</label>
+              <input type="email" class="form-control" name="email" />
+            </div>
+
+            <div class="form-group my-3">
+              <label>Sua senha</label>
+              <input type="password" class="form-control" name="password" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Criar conta</button>
+          </form>
         </div>
       </div>
-
-     
     </div>
 
     <div class="col-lg-2"></div>

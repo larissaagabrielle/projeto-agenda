@@ -16,6 +16,7 @@
 <ul>
   <li>JavaScript: A linguagem de programação principal para implementação da lógica de negócios.</li>
   <li>Node.js: Ambiente de execução que permite a criação de aplicativos JavaScript do lado do servidor.</li>
+  <li>Bootstrap: Framework de ferramenta, estilo e componentes pré-estilizados baseados em HTML, CSS e JavaScript.</li>
 </ul>
 
 <h4>Em construção... 🚧</h4>
